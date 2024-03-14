@@ -1,0 +1,68 @@
+:root {
+  --primary: #cf4647;
+  --secondary: #1d2427;
+  --bg: #f8f6f6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+  color: var(--bg);
+}
+
+/* Navbar */
+.header {
+  display: flex;
+  align-items: center;
+  padding: 1.7rem 7%;
+  background-color: var(--primary);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.header .navbar-logo {
+  cursor: default;
+  margin-right: auto;
+}
+
+.header img {
+  width: 10rem;
+  height: 3rem;
+}
+
+.navbar a {
+  position: relative;
+  color: rgb(255, 255, 255);
+  margin-right: 3.5rem;
+  font-size: 1rem;
+  margin-right: 2rem;
+}
+
+.navbar-extra a {
+  color: var(--primary);
+  padding: 0.5rem 2rem;
+  background-color: var(--bg);
+  border-radius: 5rem;
+  font-weight: 600;
+  margin-right: 1.5rem;
+}
+
+#login-button {
+  display: inline-block;
+}
