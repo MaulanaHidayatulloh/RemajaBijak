@@ -35,6 +35,7 @@ body {
   left: 0;
   width: 100%;
   z-index: 100;
+  border-bottom: 2px outset var(--shadow-color);
 }
 
 .header .navbar-logo {
@@ -43,7 +44,7 @@ body {
 }
 
 .header img {
-  width: 10rem;
+  width: 12rem;
   height: 3rem;
 }
 
@@ -53,10 +54,9 @@ body {
   margin-right: 3.5rem;
   font-size: 1.1rem;
   margin-right: 2rem;
-  cursor: pointer;
 }
 
-/* span */
+/* hover */
 .topik-hover {
   display: none;
   position: absolute;
@@ -66,7 +66,7 @@ body {
   background-color: var(--bg);
   border-radius: 1rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 1; /* Agar submenu tetap muncul di atas link lain */
+  z-index: 1;
 }
 
 .topik-hover a {
@@ -116,10 +116,15 @@ section {
 
 /* home */
 .home {
+  position: relative;
   align-items: center;
   gap: 5rem;
   display: flex;
   justify-content: center;
+  background-image: url(asset/Pattern-Main-Page.png);
+  background-position: 3.5rem 6.8rem;
+  background-size: 95%;
+  background-repeat: no-repeat;
 }
 
 .home .home-content {
@@ -280,4 +285,156 @@ section {
   font-weight: 500;
   text-align: center;
   padding: 1.5rem 12rem;
+}
+
+.sharing-container {
+  overflow: auto;
+  margin-top: 3rem;
+}
+
+.sharing-card {
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  display: inline-flex;
+}
+
+.sharing-box {
+  text-align: center;
+  background-color: #f2c1c1;
+  margin-bottom: 2.5rem;
+  border-radius: 3rem;
+}
+
+.sharing-box img {
+  height: 30rem;
+  width: 30rem;
+}
+
+.sharing-box h2 {
+  color: var(--primary);
+  margin-top: -6rem;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-weight: 800;
+}
+
+#sharing-h2-3 {
+  font-size: 1.42rem;
+}
+
+/* scroll */
+
+/* width */
+.sharing-container::-webkit-scrollbar {
+  height: 10px;
+}
+
+/* Track */
+.sharing-container::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+.sharing-container::-webkit-scrollbar-thumb {
+  background: #b6b3b3;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.sharing-container::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary);
+}
+
+/* Konsultasi */
+.konsultasi {
+  margin-top: 5rem;
+}
+
+.konsultasi h1 {
+  font-size: 3.5rem;
+}
+
+.konsul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+}
+
+.konsul a {
+  border-radius: 3rem;
+  background-color: #f2c1c1;
+  padding: 1.5rem 2rem;
+  font-size: 1.2rem;
+  margin: 0 3.5rem;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+/* Lapak Ads */
+.lapak-ads {
+  padding: 0;
+}
+
+.ads {
+  text-align: center;
+  color: var(--bg);
+  background-color: var(--primary);
+  align-items: center;
+  padding: 2rem 0;
+  font-size: 1.5rem;
+}
+
+/* Footer */
+.footer {
+  padding: 0;
+}
+
+.footer-container {
+  display: block;
+  background-color: #f2c1c1;
+}
+
+.footer-box {
+  padding-bottom: 1rem;
+  padding-top: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  display: flex;
+  border-bottom: 2px solid var(--primary);
+  align-items: center;
+  margin: 0 3rem;
+}
+
+.footer-box .logo {
+  cursor: default;
+  margin-right: auto;
+}
+
+.footer-box img {
+  width: 15rem;
+  height: 5rem;
+}
+
+.kontak-kami h2 {
+  font-size: 1.3rem;
+  color: var(--primary);
+  padding-left: 2rem;
+  padding-bottom: 0.7rem;
+}
+
+.kontak-kami img {
+  width: 3rem;
+  height: 3rem;
+}
+
+/* paling bawah */
+.copyright {
+  text-align: center;
+  color: var(--primary);
+  padding: 1.5rem 0;
+  font-weight: 500;
 }
