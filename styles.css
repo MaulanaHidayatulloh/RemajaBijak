@@ -438,3 +438,49 @@ section {
   padding: 1.5rem 0;
   font-weight: 500;
 }
+
+/* Pubertas */
+.pubertas {
+  position: relative;
+  align-items: center;
+  gap: 5rem;
+  display: flex;
+  justify-content: center;
+  background-image: url(asset/Pattern-Main-Page.png);
+  background-position: 3.5rem 6.8rem;
+  background-size: 95%;
+  background-repeat: no-repeat;
+}
+
+.pubertas .pubertas-content {
+  max-width: auto;
+  line-height: 1.3;
+}
+
+.pubertas-content h1 {
+  font-family: "Bowlby One SC", sans-serif;
+  font-weight: 500;
+}
+
+.pubertas-content .title {
+  font-size: 3.5rem;
+}
+
+.pubertas-content .home-span {
+  color: var(--primary);
+  font-size: 3rem;
+}
+
+.pubertas .title {
+  color: var(--primary); /* Warna merah untuk teks Pubertas */
+  text-align: center; /* Pusatkan teks jika diperlukan */
+}
+
+.pubertas span {
+  display: block;
+  text-align: center; /* Pusatkan teks jika diperlukan */
+}
+
+.pubertas span h1 {
+  color: black; /* Warna hitam untuk teks Ayo Belajar */
+}
