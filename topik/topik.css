@@ -1,0 +1,398 @@
+:root {
+  --primary: #cf4647;
+  --secondary: #1d2427;
+  --bg: #f8f6f6;
+  --shadow-color: rgba(0, 0, 0, 0.2);
+  --hover: #ffd568;
+  --light-red: #f2c1c1;
+  --footer: #ffdbdc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+  color: var(--secondary);
+}
+
+/* Navbar */
+.header {
+  display: flex;
+  align-items: center;
+  padding: 1.7rem 7%;
+  background-color: var(--primary);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header .navbar-logo {
+  margin-right: auto;
+}
+
+.header img {
+  width: 12rem;
+  height: 3rem;
+}
+
+.navbar a {
+  position: relative;
+  color: rgb(255, 255, 255);
+  margin-right: 3.5rem;
+  font-size: 1.1rem;
+  margin-right: 2rem;
+}
+
+#pubertas {
+  color: var(--hover);
+}
+
+/* hover */
+.topik-hover {
+  display: none;
+  position: absolute;
+  width: 15rem;
+  left: 53.5%;
+  transform: translateX(-70%);
+  background-color: var(--bg);
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.topik-hover a {
+  display: block;
+  line-height: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  margin: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: gray;
+}
+
+.topik-hover a:hover {
+  background-color: #f2c1c1;
+  border-radius: 1rem;
+  color: var(--secondary);
+}
+
+.topik:hover + .topik-hover,
+.topik-hover:hover {
+  display: block;
+}
+
+.navbar .nav:hover,
+.topik:hover {
+  color: var(--hover);
+}
+/* batas */
+
+.navbar-extra a {
+  color: var(--primary);
+  padding: 0.5rem 2.5rem;
+  background-color: var(--bg);
+  border-radius: 5rem;
+  font-weight: 800;
+}
+
+.navbar-extra a:hover {
+  background-color: var(--hover);
+}
+
+section {
+  min-height: auto;
+  min-width: auto;
+  padding: 10rem 7% 2rem;
+}
+
+/* Pubertas */
+.pubertas {
+  position: relative;
+  display: block;
+  height: 40rem;
+}
+
+.pubertas-box-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 1.2;
+  padding: 5rem 0;
+  margin-top: -2rem;
+  margin-left: -5rem;
+  margin-right: -5rem;
+  background-image: url(../asset/Pattern-pubertas-page.png);
+  background-position: top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.pubertas-title {
+  display: block;
+  margin-top: -23rem;
+  margin-left: 1rem;
+}
+
+.pubertas-box-1 h1 {
+  text-align: center;
+}
+
+.pubertas-box-1 .title {
+  font-family: "Bowlby One SC", sans-serif;
+  font-weight: 500;
+  font-size: 6.5rem;
+  color: var(--primary);
+}
+
+.pubertas-box-1 .pubertas-span {
+  font-size: 2rem;
+}
+
+.pubertas-box-1 .image-1 {
+  margin-top: -12rem;
+  margin-left: 2rem;
+}
+
+.pubertas-box-1 .image-2 {
+  margin-left: -8rem;
+  margin-right: 2rem;
+  margin-top: -3rem;
+}
+
+.pubertas-box-2 {
+  display: flex;
+  padding: 9rem;
+  margin: -27rem -6.65rem;
+  background-image: url(../asset/Pubertas.png);
+  background-position: top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+/* main content */
+.main {
+  position: relative;
+  display: block;
+}
+
+.main .main-p {
+  text-align: left;
+  text-align: justify;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.main .main-container {
+  display: block;
+  margin-top: 3rem;
+}
+
+.main-container .main-box {
+  background-color: var(--primary);
+  border-radius: 2.5rem;
+  padding: 4rem;
+  margin-bottom: 2rem;
+}
+
+.main-box .box-title {
+  display: flex;
+  font-family: "Bowlby One SC", sans-serif;
+  justify-content: space-between;
+}
+
+.box-title h1 {
+  font-weight: 500;
+  font-size: 2rem;
+  color: var(--bg);
+}
+
+/* panah */
+/* #1 */
+.box-title .bawah-pubertas-1 {
+  display: none;
+}
+
+.bawah-pubertas-1.active {
+  display: flex;
+}
+
+.kanan-pubertas-1.active {
+  display: none;
+}
+
+.keterangan-pubertas-1.active {
+  display: block;
+}
+
+/* #2 */
+.box-title .bawah-pubertas-2 {
+  display: none;
+}
+
+.bawah-pubertas-2.active {
+  display: flex;
+}
+
+.kanan-pubertas-2.active {
+  display: none;
+}
+
+.keterangan-pubertas-2.active {
+  display: block;
+}
+
+/* #3 */
+.box-title .bawah-pubertas-3 {
+  display: none;
+}
+
+.bawah-pubertas-3.active {
+  display: flex;
+}
+
+.kanan-pubertas-3.active {
+  display: none;
+}
+
+.keterangan-pubertas-3.active {
+  display: block;
+}
+
+/* #4 */
+.box-title .bawah-pubertas-4 {
+  display: none;
+}
+
+.bawah-pubertas-4.active {
+  display: flex;
+}
+
+.kanan-pubertas-4.active {
+  display: none;
+}
+
+.keterangan-pubertas-4.active {
+  display: block;
+}
+
+/* #5 */
+.box-title .bawah-pubertas-5 {
+  display: none;
+}
+
+.bawah-pubertas-5.active {
+  display: flex;
+}
+
+.kanan-pubertas-5.active {
+  display: none;
+}
+
+.keterangan-pubertas-5.active {
+  display: block;
+}
+/* batas */
+
+.box-title i {
+  font-size: 1.8rem;
+  color: var(--bg);
+}
+
+.keterangan-pubertas-1,
+.keterangan-pubertas-2,
+.keterangan-pubertas-3,
+.keterangan-pubertas-4,
+.keterangan-pubertas-5 {
+  padding-top: 2.5rem;
+  color: var(--bg);
+  display: none;
+}
+
+.main-box p {
+  font-size: 1.5rem;
+  text-align: left;
+  text-align: justify;
+}
+
+/* Lapak Ads */
+.lapak-ads {
+  padding: 0;
+  margin-top: 3rem;
+}
+
+.ads {
+  text-align: center;
+  color: var(--primary);
+  background-color: var(--primary);
+  align-items: center;
+  padding: 2rem 0;
+  font-size: 1.5rem;
+}
+
+/* Footer */
+.footer {
+  padding: 0;
+}
+
+.footer-container {
+  display: block;
+  background-color: var(--footer);
+}
+
+.footer-box {
+  padding-bottom: 1rem;
+  padding-top: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  display: flex;
+  border-bottom: 2px solid var(--primary);
+  align-items: center;
+  margin: 0 3rem;
+}
+
+.footer-box .logo {
+  cursor: default;
+  margin-right: auto;
+}
+
+.footer-box img {
+  width: 15rem;
+  height: 5rem;
+}
+
+.kontak-kami h2 {
+  font-size: 1.3rem;
+  color: var(--primary);
+  padding-left: 2rem;
+  padding-bottom: 0.7rem;
+}
+
+.kontak-kami img {
+  width: 3rem;
+  height: 3rem;
+}
+
+/* paling bawah */
+.copyright {
+  text-align: center;
+  color: var(--primary);
+  padding: 1.5rem 0;
+  font-weight: 500;
+}
