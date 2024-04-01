@@ -284,6 +284,43 @@ section {
   margin-left: 31.5rem;
 }
 
+/* main-content hilang/muncul */
+/* #1 */
+.main-content-1 {
+  display: none;
+}
+
+.main-content-1.active {
+  display: block;
+}
+
+.main-p-1.active {
+  display: none;
+}
+
+.main-continue-1.active {
+  display: none;
+}
+
+/* #2 */
+.main-content-2 {
+  display: none;
+}
+
+.main-content-2.active {
+  display: block;
+}
+
+.main-p-2.active {
+  display: none;
+}
+
+.main-continue-2.active {
+  display: none;
+}
+/* batas */
+/*  */
+
 /* Sharing */
 .sharing {
   padding-top: 0;

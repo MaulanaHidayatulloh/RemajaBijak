@@ -339,7 +339,7 @@ section {
 
 .ads {
   text-align: center;
-  color: var(--primary);
+  color: var(--bg);
   background-color: var(--primary);
   align-items: center;
   padding: 2rem 0;
