@@ -126,7 +126,7 @@ section {
 .pubertas {
   position: relative;
   display: block;
-  height: 40rem;
+  height: 38rem;
 }
 
 .pubertas-box-1 {
@@ -171,6 +171,7 @@ section {
   font-size: 2rem;
 }
 
+/* gambar sampul pubertas */
 .pubertas-box-1 .image-1 {
   margin-top: -12rem;
   margin-left: 2rem;
@@ -182,11 +183,102 @@ section {
   margin-top: -3rem;
 }
 
+/* gambar sampul kesehatan */
+.pubertas-box-1 .image-kesehatan-1 {
+  margin-top: -17rem;
+}
+
+.pubertas-box-1 .image-kesehatan-2 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: -3rem;
+}
+
+/* gambar sampul bahaya */
+.pubertas-box-1 .image-bahaya-1 {
+  margin-top: -19rem;
+}
+
+.pubertas-box-1 .image-bahaya-2 {
+  margin-left: -1rem;
+  margin-right: 2rem;
+  margin-top: 4rem;
+}
+
+/* gambar sampul ims */
+.pubertas-box-1 .image-ims-1 {
+  margin-top: -10rem;
+  margin-left: 1rem;
+}
+
+.pubertas-box-1 .image-ims-2 {
+  margin-left: -2rem;
+  margin-right: 2rem;
+  margin-top: -3rem;
+}
+
+/* gambar sampul pelecehan */
+.pubertas-box-1 .image-pelecehan-1 {
+  margin-top: -12rem;
+  margin-left: 1.5rem;
+}
+
+.pubertas-box-1 .image-pelecehan-2 {
+  margin-left: -2rem;
+  margin-right: 4rem;
+  margin-top: 7rem;
+}
+
+/* Pubertas Background */
 .pubertas-box-2 {
   display: flex;
   padding: 9rem;
   margin: -27rem -6.65rem;
   background-image: url(../asset/Pubertas.png);
+  background-position: top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+/* Kesehatan Background */
+.bahaya-box-2 {
+  display: flex;
+  padding: 9rem;
+  margin: -27rem -6.65rem;
+  background-image: url(../asset/Perilaku-Seks-Bebas.png);
+  background-position: top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+/* Kesehatan Background */
+.kesehatan-box-2 {
+  display: flex;
+  padding: 9rem;
+  margin: -27rem -6.65rem;
+  background-image: url(../asset/Kesehatan.png);
+  background-position: top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+/* IMS Background */
+.ims-box-2 {
+  display: flex;
+  padding: 9rem;
+  margin: -27rem -6.65rem;
+  background-image: url(../asset/IMS.png);
+  background-position: top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+/* IMS Background */
+.pelecehan-box-2 {
+  display: flex;
+  padding: 9rem;
+  margin: -27rem -6.65rem;
+  background-image: url(../asset/Pelecehan-Seksual.png);
   background-position: top;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -198,11 +290,33 @@ section {
   display: block;
 }
 
-.main .main-p {
-  text-align: left;
-  text-align: justify;
+.main .main-p,
+.main-p-2 {
+  text-align: center;
   font-size: 1.5rem;
   font-weight: 600;
+}
+
+.main-title {
+  text-align: center;
+  font-family: "Bowlby One SC", sans-serif;
+  font-weight: 500;
+  font-size: 3rem;
+  color: var(--secondary);
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.main-title span {
+  color: var(--primary);
+}
+
+#pubertas-main-p {
+  padding: 0 17rem;
+}
+
+.main-p span {
+  color: var(--primary);
 }
 
 .main .main-container {
@@ -331,10 +445,20 @@ section {
   display: none;
 }
 
+.main-box li {
+  font-size: 1.5rem;
+  text-align: left;
+  text-align: justify;
+}
+
 .main-box p {
   font-size: 1.5rem;
   text-align: left;
   text-align: justify;
+}
+
+.alkohol {
+  margin-top: 2rem;
 }
 
 /* Lapak Ads */

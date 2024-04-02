@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RemajaBijak</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="quiz.css" />
+  </head>
+  <body>
+    <div class="quiz-container">
+      <!-- nomor 1 -->
+      <div id="question1" class="question">
+        <p>
+          “Duh, kok bangun-bangun aku ngompol sih?! Padahal aku udah 12 tahun
+          lho!”
+        </p>
+        <img src="../asset/quiz-pubertas-nomor1.png" alt="" />
+        <h3>
+          Menurut kamu, apa sih yang sebenarnya dialami oleh anak tersebut?
+        </h3>
+        <div class="jawab">
+          <button onclick="checkAnswer('a', 1)">
+            A. Mimpi Lagi Pipis di Kamar mandi
+          </button>
+          <button onclick="checkAnswer('b', 1)">B. Mimpi Basah</button>
+          <button onclick="checkAnswer('c', 1)">
+            C. Gejala Penyakit Beser
+          </button>
+          <div class="panjang">
+            <div class="panjang-dalam" id="panjang-dalam-1"></div>
+            <p>1/5</p>
+          </div>
+          <p id="timer1" class="waktu">
+            Waktu : <span id="time1">60</span> detik
+          </p>
+        </div>
+      </div>
+
+      <!-- jawaban benar -->
+      <div id="jawaban1" class="jawaban" style="display: none">
+        <h2>YEAY, KAMU BENAR</h2>
+        <img src="../asset/loving-look.png" alt="" />
+        <div class="wrong">Wrong</div>
+        <div class="right">Right</div>
+        <div class="panjang">
+          <div class="panjang-dalam" id="panjang-dalam-1"></div>
+          <p>1/5</p>
+        </div>
+        <div class="penjelasan">
+          <h3>Penjelasan :</h3>
+          <p>
+            Anak laki-laki pada masa pubertas akan mengalami mimpi basah yang
+            disebabkan oleh peningkatan kadar hormon testosteron yang memicu
+            produksi sperma. Hal ini sangat normal dan dapat terjadi lebih dari
+            satu kali.
+          </p>
+        </div>
+      </div>
+
+      <!-- jawaban salah -->
+      <div id="salah1" class="jawaban" style="display: none">
+        <h2>YAH, KAMU SALAH NIH...</h2>
+        <img src="../asset/shock.png" alt="" />
+        <div class="salah-wrong">Wrong</div>
+        <div class="salah-right">Right</div>
+        <div class="panjang">
+          <div class="panjang-dalam" id="panjang-dalam-1"></div>
+          <p>1/5</p>
+        </div>
+        <div class="penjelasan">
+          <h3>Jawaban yang benar adalah : B. Mimpi Basah</h3>
+          <p>
+            Anak laki-laki pada masa pubertas akan mengalami mimpi basah yang
+            disebabkan oleh peningkatan kadar hormon testosteron yang memicu
+            produksi sperma. Hal ini sangat normal dan dapat terjadi lebih dari
+            satu kali.
+          </p>
+        </div>
+      </div>
+
+      <!-- nomor 2 -->
+      <div id="question2" class="question" style="display: none">
+        <p>Apa nama benda di bawah?</p>
+        <img src="../asset/quiz-pubertas-nomor2.png" alt="" />
+        <h3>Apa nama benda di atas?</h3>
+        <div class="jawab">
+          <button onclick="checkAnswer('a', 2)">A. Roti Jepang</button>
+          <button onclick="checkAnswer('b', 2)">B. Roti Panjang</button>
+          <button onclick="checkAnswer('c', 2)">C. Pembalut</button>
+          <div class="panjang">
+            <div class="panjang-dalam" id="panjang-dalam-2"></div>
+            <p>2/5</p>
+          </div>
+          <p id="timer2" class="waktu">
+            Waktu : <span id="time2">60</span> detik
+          </p>
+        </div>
+      </div>
+
+      <!-- jawaban benar -->
+      <div id="jawaban2" class="jawaban" style="display: none">
+        <h2>YEAY, KAMU BENAR</h2>
+        <img src="../asset/loving-look.png" alt="" />
+        <div class="wrong">Wrong</div>
+        <div class="right">Right</div>
+        <div class="panjang">
+          <div class="panjang-dalam" id="panjang-dalam-2"></div>
+          <p>2/5</p>
+        </div>
+        <div class="penjelasan">
+          <h3>Penjelasan :</h3>
+          <p>
+            Pembalut adalah salah satu benda/alat yang berfungsi untuk membantu
+            menyerap cairan atau darah menstruasi yang keluar dari vagina. Tidak
+            perlu malu untuk menyebutkan kata “pembalut” dan menunjukkannya
+            secara terang-terangan di publik! Begitu pula dengan menyebutkan
+            kata menstruasi atau haid. Menstruasi sendiri adalah hal alami yang
+            dialami oleh perempuan di setiap bulannya, dan pembalut menjadi
+            salah satu barang yang membantu perempuan dalam menghadapi
+            menstruasi.
+          </p>
+        </div>
+      </div>
+
+      <!-- jawaban salah -->
+      <div id="salah2" class="jawaban" style="display: none">
+        <h2>YAH, KAMU SALAH NIH...</h2>
+        <img src="../asset/shock.png" alt="" />
+        <div class="salah-wrong">Wrong</div>
+        <div class="salah-right">Right</div>
+        <div class="panjang">
+          <div class="panjang-dalam" id="panjang-dalam-2"></div>
+          <p>2/5</p>
+        </div>
+        <div class="penjelasan">
+          <h3>Jawaban yang benar adalah : C. Pembalut</h3>
+          <p>
+            Pembalut adalah salah satu benda/alat yang berfungsi untuk membantu
+            menyerap cairan atau darah menstruasi yang keluar dari vagina. Tidak
+            perlu malu untuk menyebutkan kata “pembalut” dan menunjukkannya
+            secara terang-terangan di publik! Begitu pula dengan menyebutkan
+            kata menstruasi atau haid. Menstruasi sendiri adalah hal alami yang
+            dialami oleh perempuan di setiap bulannya, dan pembalut menjadi
+            salah satu barang yang membantu perempuan dalam menghadapi
+            menstruasi.
+          </p>
+        </div>
+      </div>
+
+      <!-- nomor 3 -->
+      <div id="question3" class="question" style="display: none">
+        <p>Apa salah satu fungsi dari alat reproduksi perempuan?</p>
+        <img src="../asset/quiz-pubertas-nomor3.png" alt="" />
+        <h3>Apa salah satu fungsi dari alat reproduksi perempuan?</h3>
+        <div class="jawab">
+          <button onclick="checkAnswer('a', 3)">
+            A. Sebagai tempat fertilisasi
+          </button>
+          <button onclick="checkAnswer('b', 3)">
+            B. Menjadi Beban Hidup Perempuan
+          </button>
+          <button onclick="checkAnswer('c', 3)">
+            C. Menciptakan Rasa Sakit
+          </button>
+          <div class="panjang">
+            <div class="panjang-dalam" id="panjang-dalam-3"></div>
+            <p>3/5</p>
+          </div>
+          <p id="timer3" class="waktu">
+            Waktu : <span id="time3">60</span> detik
+          </p>
+        </div>
+      </div>
+
+      <!-- jawaban benar -->
+      <div id="jawaban3" class="jawaban" style="display: none">
+        <h2>YEAY, KAMU BENAR</h2>
+        <img src="../asset/loving-look.png" alt="" />
+        <div class="wrong">Wrong</div>
+        <div class="right">Right</div>
+        <div class="panjang">
+          <div class="panjang-dalam" id="panjang-dalam-3"></div>
+          <p>3/5</p>
+        </div>
+        <div class="penjelasan">
+          <h3>Penjelasan :</h3>
+          <p>
+            Tuba fallopi adalah alat reproduksi wanita yang berfungsi sebagai
+            tempat utama terjadinya fertilisasi atau pembuahan, di mana sperma
+            dan sel telur bertemu untuk menghasilkan zigot, yang kemudian
+            bergerak menuju ke rahim untuk implantasi
+          </p>
+        </div>
+      </div>
+
+      <!-- jawaban salah -->
+      <div id="salah3" class="jawaban" style="display: none">
+        <h2>YAH, KAMU SALAH NIH...</h2>
+        <img src="../asset/shock.png" alt="" />
+        <div class="salah-wrong">Wrong</div>
+        <div class="salah-right">Right</div>
+        <div class="panjang">
+          <div class="panjang-dalam" id="panjang-dalam-3"></div>
+          <p>3/5</p>
+        </div>
+        <div class="penjelasan">
+          <h3>Jawaban yang benar adalah : A. Sebagai Tempat Fertilisasi</h3>
+          <p>
+            Tuba fallopi adalah alat reproduksi wanita yang berfungsi sebagai
+            tempat utama terjadinya fertilisasi atau pembuahan, di mana sperma
+            dan sel telur bertemu untuk menghasilkan zigot, yang kemudian
+            bergerak menuju ke rahim untuk implantasi
+          </p>
+        </div>
+      </div>
+
+      <!-- nomor 4 -->
+      <div id="question4" class="question" style="display: none">
+        <p>Alat reproduksi yang dimiliki oleh pria disebut dengan?</p>
+        <img src="../asset/quiz-pubertas-nomor4.png" alt="" />
+        <h3>Alat reproduksi yang dimiliki oleh pria disebut dengan?</h3>
+        <div class="jawab">
+          <button onclick="checkAnswer('a', 4)">A. Pisang</button>
+          <button onclick="checkAnswer('b', 4)">B. Penis</button>
+          <button onclick="checkAnswer('c', 4)">c. Testis</button>
+          <div class="panjang">
+            <div class="panjang-dalam" id="panjang-dalam-4"></div>
+            <p>4/5</p>
+          </div>
+          <p id="timer4" class="waktu">
+            Waktu : <span id="time4">60</span> detik
+          </p>
+        </div>
+      </div>
+
+      <!-- jawaban benar -->
+      <div id="jawaban4" class="jawaban" style="display: none">
+        <h2>YEAY, KAMU BENAR</h2>
+        <img src="../asset/loving-look.png" alt="" />
+        <div class="wrong">Wrong</div>
+        <div class="right">Right</div>
+        <div class="panjang">
+          <div class="panjang-dalam" id="panjang-dalam-4"></div>
+          <p>4/5</p>
+        </div>
+        <div class="penjelasan">
+          <h3>Penjelasan :</h3>
+          <p>
+            Penis adalah organ reproduksi pria berbentuk silinder yang berfungsi
+            sebagai jalan keluar sperma dan urine (air seni) dari tubuh.
+          </p>
+        </div>
+      </div>
+
+      <!-- jawaban salah -->
+      <div id="salah4" class="jawaban" style="display: none">
+        <h2>YAH, KAMU SALAH NIH...</h2>
+        <img src="../asset/shock.png" alt="" />
+        <div class="salah-wrong">Wrong</div>
+        <div class="salah-right">Right</div>
+        <div class="panjang">
+          <div class="panjang-dalam" id="panjang-dalam-4"></div>
+          <p>4/5</p>
+        </div>
+        <div class="penjelasan">
+          <h3>Jawaban yang benar adalah : B. Penis</h3>
+          <p>
+            Penis adalah organ reproduksi pria berbentuk silinder yang berfungsi
+            sebagai jalan keluar sperma dan urine (air seni) dari tubuh.
+          </p>
+        </div>
+      </div>
+
+      <!-- nomor 5 -->
+      <div id="question5" class="question" style="display: none">
+        <p>Apa sih “menstruasi” itu?</p>
+        <img src="../asset/quiz-pubertas-nomor5.png" alt="" />
+        <h3>Apa sih “menstruasi” itu?</h3>
+        <div class="jawab">
+          <button onclick="checkAnswer('a', 5)">
+            A. Luka berat yang terjadi di bagian dalam vagina
+          </button>
+          <button onclick="checkAnswer('b', 5)">
+            B. Akibat dari menghindari makan buah dan sayur
+          </button>
+          <button onclick="checkAnswer('c', 5)">
+            C. Suatu masa dimana perempuan mengalami pendarahan dari vagina
+          </button>
+          <div class="panjang">
+            <div class="panjang-dalam" id="panjang-dalam-5"></div>
+            <p>5/5</p>
+          </div>
+          <p id="timer5" class="waktu">
+            Waktu : <span id="time5">60</span> detik
+          </p>
+        </div>
+      </div>
+
+      <!-- jawaban benar -->
+      <div id="jawaban5" class="jawaban" style="display: none">
+        <h2>YEAY, KAMU BENAR</h2>
+        <img src="../asset/loving-look.png" alt="" />
+        <div class="wrong">Wrong</div>
+        <div class="right">Right</div>
+        <div class="panjang">
+          <div class="panjang-dalam" id="panjang-dalam-5"></div>
+          <p>5/5</p>
+        </div>
+        <div class="penjelasan">
+          <h3>Penjelasan :</h3>
+          <p>
+            Menstruasi merupakan bagian dari siklus reproduksi perempuan yang
+            terjadi secara alami di setiap bulan, ditandai dengan keluarnya
+            darah dari vagina. Masa menstruasi biasanya berlangsung selama 2
+            hingga 7 hari lamanya.
+          </p>
+        </div>
+      </div>
+
+      <!-- jawaban salah -->
+      <div id="salah5" class="jawaban" style="display: none">
+        <h2>YAH, KAMU SALAH NIH...</h2>
+        <img src="../asset/shock.png" alt="" />
+        <div class="salah-wrong">Wrong</div>
+        <div class="salah-right">Right</div>
+        <div class="panjang">
+          <div class="panjang-dalam" id="panjang-dalam-5"></div>
+          <p>5/5</p>
+        </div>
+        <div class="penjelasan">
+          <h3>
+            Jawaban yang benar adalah : C. Suatu Masa Dimana Perempuan Mengalami
+            Pendarahan Dari Vagina
+          </h3>
+          <p>
+            Menstruasi merupakan bagian dari siklus reproduksi perempuan yang
+            terjadi secara alami di setiap bulan, ditandai dengan keluarnya
+            darah dari vagina. Masa menstruasi biasanya berlangsung selama 2
+            hingga 7 hari lamanya.
+          </p>
+        </div>
+      </div>
+
+      <!-- hasil -->
+      <!-- nilai diatas 50 -->
+      <div id="result-diatas50" class="hasil" style="display: none">
+        <h1>KELAS🔥</h1>
+        <p>
+          Selamat, kamu sudah menyelesaikan quiznya dengan baik! Dan ini score
+          yang kamu dapat kan Sobat! Tetap semangat belajar ya.
+        </p>
+        <div class="nilai">
+          <p id="total-score-diatas50"></p>
+          <div class="link">
+            <a href="#">
+              <img src="../asset/Link-2.png" alt="" />
+            </a>
+            <a href="quiz-pubertas.html"
+              ><img src="../asset/Swap-3.png" alt=""
+            /></a>
+          </div>
+          <div class="back">
+            <a href="quiz.html" id="quiz-page">Back To Quiz-Page</a>
+            <a href="../index.html" id="home-page"
+              >Back To <i>RemajaBijak</i></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- nilai dibawah50 -->
+      <div id="result-dibawah50" class="hasil" style="display: none">
+        <h1>NOOB&#128078;</h1>
+        <p>
+          Yah, score kamu masih kurang nih. Mau coba main lagi? Biar kamu jadi
+          makin jago nih Sobat!
+        </p>
+        <div class="nilai">
+          <p id="total-score-dibawah50"></p>
+          <div class="link">
+            <a href="#">
+              <img src="../asset/Link-2.png" alt="" />
+            </a>
+            <a href="quiz-pubertas.html"
+              ><img src="../asset/Swap-3.png" alt=""
+            /></a>
+          </div>
+          <div class="back">
+            <a href="quiz.html" id="quiz-page">Back To Quiz-Page</a>
+            <a href="../index.html" id="home-page"
+              >Back To <i>RemajaBijak</i></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- My Javascript -->
+    <script src="quiz1.js"></script>
+  </body>
+</html>

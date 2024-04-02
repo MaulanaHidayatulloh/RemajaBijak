@@ -20,7 +20,7 @@
     />
 
     <!-- My Style -->
-    <link rel="stylesheet" href="topik.css" />
+    <link rel="stylesheet" href="quiz.css" />
   </head>
   <body>
     <!-- header -->
@@ -30,13 +30,13 @@
       /></a>
 
       <nav class="navbar">
-        <a style="cursor: pointer" class="topik" id="pubertas">Topik</a>
+        <a class="topik" style="cursor: pointer">Topik</a>
         <div class="topik-hover">
-          <a href="pubertas.html">Pubertas</a>
-          <a href="kesehatan.html">Kesehatan Reproduksi</a>
-          <a href="bahaya.html">Bahaya Perilaku Seks Bebas</a>
-          <a href="ims.html">Mengenal Jenis-Jenis IMS</a>
-          <a href="pelecehan.html">Sekilas Tentang Pelecehan Sexual</a>
+          <a href="../topik/pubertas.html">Pubertas</a>
+          <a href="../topik/kesehatan.html">Kesehatan Reproduksi</a>
+          <a href="../topik/bahaya.html">Bahaya Perilaku Seks Bebas</a>
+          <a href="../topik/ims.html">Mengenal Jenis-Jenis IMS</a>
+          <a href="../topik/pelecehan.html">Sekilas Tentang Pelecehan Sexual</a>
         </div>
         <a href="#" class="nav">Mitos atau Fakta</a>
         <a href="#" class="nav">Artikel</a>
@@ -45,55 +45,61 @@
       </nav>
 
       <div class="navbar-extra">
-        <a href="../quiz/quiz.html">QUIZ</a>
+        <a href="quiz/quiz.html" id="quiz-bro">QUIZ</a>
       </div>
     </header>
 
     <!-- sampul atas -->
-    <section class="pubertas">
-      <div class="pubertas-box-1">
-        <img
-          src="../asset/Bahaya-Perilaku.png"
-          class="image-bahaya-1"
-          alt=""
-        />
-        <div class="pubertas-title">
-          <h1 class="title" id="bahaya-title">Bahaya Perilaku</h1>
-          <span class="pubertas-span"><h1>Seks Bebas!</h1></span>
-        </div>
-        <img src="../asset/Bahaya-Perilaku-2.png" alt="" class="image-bahaya-2" />
+    <div class="background">.</div>
+    <section class="home">
+      <div class="home-img">
+        <img src="../asset/quiz.png" alt="" />
       </div>
-      <div class="bahaya-box-2"></div>
+
+      <div class="home-content">
+        <h1 class="title">WAKTUNYA</h1>
+        <h1>QUIZ!</h1>
+      </div>
     </section>
 
-    <!-- main content -->
+    <!-- main -->
     <section class="main">
-      <p class="main-p">
-        Halo Sobat! kamu tau ngga sih kalau perilaku seks bebas itu bahaya banget lho! Nih aku kasih tau apa aja bahayanya.
-      </p>
-
       <div class="main-container">
         <div class="main-box">
-          <!-- #1 -->
-          <div class="box-title">
-            <h1>Apa aja sih bahaya seks bebas?</h1>
-            <a href="#" class="kanan-pubertas-1"
-              ><i class="bi bi-chevron-right"></i
-            ></a>
-            <a href="#" class="bawah-pubertas-1"
-              ><i class="bi bi-chevron-down"></i
-            ></a>
+          <div class="quiz-box-1">
+            <img src="../asset/Gambar-roket-quiz.png" alt="" />
+            <div class="main-box-title">
+              <h1>MAIN QUIZ</h1>
+              <h1>TENTANG PUBERTAS</h1>
+            </div>
           </div>
-          <div class="keterangan-pubertas-1">
+          <div class="quiz-box-2">
             <p>
-                Seks bebas itu beneran risky, guys. Mulai dari penyakit kayak HIV/AIDS, herpes, sampe kutil kelamin bisa nyebar. 
-                Plis, jangan remehin risiko kanker, misalnya kanker ovarium buat cewek atau kanker prostat buat cowok. 
-                Dan kalau hamil, nggak disiapin dengan bener, bisa bikin masalah banget, deh. Teuing, kan? 
-                Kesehatan mental juga kena dampaknya, bisa bikin down, ngerusak mood, dan bikin insecure. 
-                Jadi, lebih baik mikirin dua kali sebelum nyobain seks bebas, guys.
+              Hai Sobat Maja! Yuk coba mainkan quiz ini supaya meningkatkan
+              pengetahuan dasar kamu nih, mengenai seputar Pubertas!
             </p>
+            <a href="quiz-pubertas.html">Coba Quiz</a>
           </div>
         </div>
+
+        <!-- 2 -->
+        <div class="main-box">
+          <div class="quiz-box-1">
+            <img src="../asset/Gambar-roket-quiz.png" alt="" />
+            <div class="main-box-title">
+              <h1>MAIN QUIZ</h1>
+              <h1 class="title-mainbox-2">TENTANG PELECEHAN SEKSUAL</h1>
+            </div>
+          </div>
+          <div class="quiz-box-2">
+            <p>
+              Hai Sobat Maja! Yuk coba mainkan quiz ini supaya meningkatkan
+              pengetahuan dasar kamu nih, mengenai seputar Pelecehan Seksual!
+            </p>
+            <a href="#">Coba Quiz</a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Lapak ads -->
@@ -121,8 +127,5 @@
         <div class="copyright">Remaja Bijak - 2024</div>
       </div>
     </footer>
-
-    <!-- My Javascript -->
-    <script src="../script.js"></script>
   </body>
 </html>

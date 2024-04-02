@@ -1,0 +1,642 @@
+:root {
+  --primary: #cf4647;
+  --secondary: #1d2427;
+  --bg: #f8f6f6;
+  --shadow-color: rgba(0, 0, 0, 0.2);
+  --hover: #ffd568;
+  --light-red: #f2c1c1;
+  --footer: #ffdbdc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+  color: var(--secondary);
+}
+
+/* Navbar */
+.header {
+  display: flex;
+  align-items: center;
+  padding: 1.7rem 7%;
+  background-color: var(--primary);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header .navbar-logo {
+  margin-right: auto;
+}
+
+.header img {
+  width: 12rem;
+  height: 3rem;
+}
+
+.navbar a {
+  position: relative;
+  color: rgb(255, 255, 255);
+  margin-right: 3.5rem;
+  font-size: 1.1rem;
+  margin-right: 2rem;
+}
+
+#quiz-bro {
+  background-color: var(--hover);
+}
+
+/* hover */
+.topik-hover {
+  display: none;
+  position: absolute;
+  width: 15rem;
+  left: 53.5%;
+  transform: translateX(-70%);
+  background-color: var(--bg);
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.topik-hover a {
+  display: block;
+  line-height: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  margin: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: gray;
+}
+
+.topik-hover a:hover {
+  background-color: #f2c1c1;
+  border-radius: 1rem;
+  color: var(--secondary);
+}
+
+.topik:hover + .topik-hover,
+.topik-hover:hover {
+  display: block;
+}
+
+.navbar .nav:hover,
+.topik:hover {
+  color: var(--hover);
+}
+/* batas */
+
+.navbar-extra a {
+  color: var(--primary);
+  padding: 0.5rem 2.5rem;
+  background-color: var(--bg);
+  border-radius: 5rem;
+  font-weight: 800;
+}
+
+.navbar-extra a:hover {
+  background-color: var(--hover);
+}
+
+section {
+  min-height: auto;
+  min-width: auto;
+  padding: 10rem 7% 2rem;
+}
+
+/* Sampul atas */
+.home {
+  position: relative;
+  align-items: center;
+  gap: 5rem;
+  display: flex;
+  justify-content: center;
+  background-image: url(../asset/Pattern-Main-Page.png);
+  background-position: 3.5rem 6.8rem;
+  background-size: 95%;
+  background-repeat: no-repeat;
+}
+
+.home .home-img {
+  margin-top: 4rem;
+}
+
+.home .home-content {
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  max-width: auto;
+  line-height: 1.3;
+  margin-top: 4rem;
+  border-top: 15px solid var(--primary);
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
+  border-bottom: 15px solid var(--primary);
+  border-bottom-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+}
+
+.home-content h1 {
+  font-family: "Bowlby One SC", sans-serif;
+  font-weight: 500;
+  font-size: 6.5rem;
+  color: var(--primary);
+}
+
+/* Main */
+.main {
+  padding: 5rem;
+}
+
+.main .main-container {
+  display: block;
+}
+
+.main-box {
+  display: block;
+  background-color: var(--primary);
+  border-radius: 2rem;
+  box-shadow: 0 0.2rem 1rem var(--shadow-color);
+  margin-bottom: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-box .quiz-box-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  padding-left: 7rem;
+  padding-top: 7rem;
+  padding-right: 7rem;
+  padding-bottom: 2rem;
+  background-image: url(../asset/stars-atas.png);
+  background-position: 1.5rem 2rem;
+  background-size: 20%;
+  background-repeat: no-repeat;
+  line-height: 0.5;
+}
+
+.quiz-box-1 .main-box-title {
+  display: block;
+  padding-bottom: 3rem;
+  border-bottom: 10px solid var(--bg);
+}
+
+.main-box h1 {
+  text-align: left;
+  font-family: "Bowlby One SC", sans-serif;
+  font-weight: 500;
+  font-size: 4rem;
+  color: var(--bg);
+  padding-top: 3rem;
+}
+
+.main-box-title .title-mainbox-2 {
+  font-size: 3.5rem;
+  line-height: 1.3;
+}
+
+.main-box .quiz-box-2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../asset/stars-bawah.png);
+  background-position: 66rem 0;
+  background-size: 20%;
+  background-repeat: no-repeat;
+}
+
+.quiz-box-2 p {
+  font-size: 1.5rem;
+  color: var(--bg);
+  font-weight: 600;
+  text-align: center;
+  padding: 2rem 12rem;
+}
+
+.main-box a {
+  background-color: var(--bg);
+  color: var(--primary);
+  padding: 1rem 10rem;
+  border-radius: 2rem;
+  display: inline-block;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* Lapak Ads */
+.lapak-ads {
+  padding: 0;
+}
+
+.ads {
+  text-align: center;
+  color: var(--bg);
+  background-color: var(--primary);
+  align-items: center;
+  padding: 2rem 0;
+  font-size: 1.5rem;
+}
+
+/* Footer */
+.footer {
+  padding: 0;
+}
+
+.footer-container {
+  display: block;
+  background-color: var(--footer);
+}
+
+.footer-box {
+  padding-bottom: 1rem;
+  padding-top: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  display: flex;
+  border-bottom: 2px solid var(--primary);
+  align-items: center;
+  margin: 0 3rem;
+}
+
+.footer-box .logo {
+  cursor: default;
+  margin-right: auto;
+}
+
+.footer-box img {
+  width: 15rem;
+  height: 5rem;
+}
+
+.kontak-kami h2 {
+  font-size: 1.3rem;
+  color: var(--primary);
+  padding-left: 2rem;
+  padding-bottom: 0.7rem;
+}
+
+.kontak-kami img {
+  width: 3rem;
+  height: 3rem;
+}
+
+/* paling bawah */
+.copyright {
+  text-align: center;
+  color: var(--primary);
+  padding: 1.5rem 0;
+  font-weight: 500;
+}
+
+/* quiz-cover */
+.quiz-cover {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-image: url(../asset/Pattern-Main-Page.png);
+  background-position: 3.5rem 2rem;
+  background-size: 95%;
+  background-repeat: no-repeat;
+}
+
+.home-img img {
+  height: 25rem;
+}
+
+.quiz-cover .home-content {
+  padding-bottom: 1rem;
+  max-width: auto;
+  text-align: center;
+}
+
+.quiz-cover p {
+  font-family: "Bowlby One SC", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  color: var(--primary);
+  margin-top: 1rem;
+}
+
+.quiz-cover a {
+  background-color: var(--primary);
+  color: var(--bg);
+  padding: 1rem 10rem;
+  border-radius: 2rem;
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* QUIZ */
+
+/* Soal */
+.quiz-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../asset/Pattern-pubertas-page.png);
+  background-position: top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.question {
+  padding-top: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30rem;
+  height: auto;
+  flex-wrap: wrap;
+  text-align: center;
+  color: var(--primary);
+}
+
+.question p {
+  font-size: 1.3rem;
+}
+
+.question img {
+  width: 15rem;
+  height: 15rem;
+}
+
+.jawab {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 30rem;
+}
+
+.jawab button {
+  width: 26rem;
+  border-radius: 3rem;
+  padding: 1rem 2rem;
+  margin: 1rem;
+  cursor: pointer;
+  background-color: var(--primary);
+  color: var(--bg);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.panjang {
+  margin-top: 0.7rem;
+  background-color: #b6b3b3;
+  border-radius: 10rem;
+  width: 22rem;
+  height: 0.5rem;
+  border: 1px solid black;
+}
+
+.panjang .panjang-dalam {
+  background-color: var(--secondary);
+  align-items: center;
+  border-radius: 10rem;
+  border: 1px solid black;
+  height: 0.5rem;
+}
+
+#panjang-dalam-1 {
+  width: 20%;
+}
+
+#panjang-dalam-2 {
+  width: 40%;
+}
+
+#panjang-dalam-3 {
+  width: 60%;
+}
+
+#panjang-dalam-4 {
+  width: 80%;
+}
+
+#panjang-dalam-5 {
+  width: 100%;
+}
+
+.panjang p {
+  font-size: 0.8rem;
+  color: grey;
+}
+
+.waktu {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+#timer1,
+#timer2,
+#timer3,
+#timer4,
+#timer5 {
+  font-size: 2rem;
+}
+
+/* Jawaban Benar */
+.jawaban {
+  padding-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25rem;
+  height: auto;
+  flex-wrap: wrap;
+  text-align: center;
+  color: var(--primary);
+}
+
+.jawaban h2 {
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+.jawaban img {
+  width: 12rem;
+  height: 15rem;
+}
+
+.jawaban .wrong,
+.jawaban .right {
+  padding: 1rem 10rem;
+  font-size: 1.3rem;
+}
+
+.jawaban .wrong {
+  border-radius: 1rem;
+  border: 1px solid var(--secondary);
+  margin-top: 1rem;
+  color: var(--bg);
+  color: var(--secondary);
+  font-weight: 700;
+}
+
+.jawaban .right {
+  border-radius: 1rem;
+  border: 1px solid var(--secondary);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: var(--bg);
+  background-color: #4abf5d;
+  font-weight: 700;
+}
+
+/* bagian salah */
+.jawaban .salah-wrong,
+.jawaban .salah-right {
+  padding: 1rem 10rem;
+  font-size: 1.3rem;
+}
+.salah-wrong {
+  border-radius: 1rem;
+  border: 1px solid var(--secondary);
+  margin-top: 1rem;
+  color: var(--bg);
+  background-color: var(--primary);
+  font-weight: 700;
+}
+
+.salah-right {
+  border-radius: 1rem;
+  border: 1px solid var(--secondary);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: var(--secondary);
+  font-weight: 700;
+}
+/* batas */
+
+.penjelasan {
+  margin: 2rem -15rem;
+  text-align: left;
+  text-align: justify;
+}
+
+.penjelasan h3 {
+  font-size: 1.5rem;
+}
+
+.penjelasan p {
+  font-size: 1.2rem;
+}
+
+/* Hasil */
+.hasil {
+  padding-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30rem;
+  height: auto;
+  flex-wrap: wrap;
+  text-align: center;
+  color: var(--primary);
+}
+
+.hasil h1 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.hasil p {
+  font-size: 1.2rem;
+  margin: 0.5rem -8rem;
+  font-weight: 600;
+}
+
+.nilai {
+  width: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nilai p {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 100%;
+  border: 15px solid var(--primary);
+  font-size: 5rem;
+  color: var(--primary);
+  font-family: "Bowlby One SC", sans-serif;
+  padding: 3rem 0;
+  margin-top: 2rem;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7rem;
+}
+
+.link a {
+  background-color: var(--primary);
+  border-radius: 100%;
+  padding: 1rem;
+  margin-right: 1rem;
+  margin-left: 1.5rem;
+}
+
+.nilai a img {
+  height: 2rem;
+  width: 2rem;
+}
+
+.back {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.back #quiz-page {
+  width: 15rem;
+  color: var(--bg);
+  font-weight: 600;
+  background-color: var(--primary);
+  padding: 1rem;
+  border-radius: 3rem;
+}
+
+.back #home-page {
+  margin-top: 1rem;
+  width: 15rem;
+  color: var(--secondary);
+}
+
+.back #home-page i {
+  font-weight: bold;
+}
