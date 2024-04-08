@@ -64,6 +64,27 @@ function checkAnswer(selectedAnswer, questionNumber) {
   clearInterval(timer);
 }
 
+document.getElementById("noSelectText").addEventListener("keydown", function(event) {
+  // Mendapatkan kode tombol yang ditekan
+  var keyCode = event.keyCode || event.which;
+
+  // Mencegah penggunaan tombol "c" di keyboard
+  if (keyCode === 67) {
+    event.preventDefault();
+  }
+});
+
+document.getElementById("noSelectText").addEventListener("selectstart", function(event) {
+  // Mencegah pemilihan teks pada elemen
+  event.preventDefault();
+});
+
+document.getElementById("noSelectText").addEventListener("contextmenu", function(event) {
+  // Mencegah munculnya menu konteks saat klik kanan
+  event.preventDefault();
+});
+
+
 function goToNextQuestion() {
   document.getElementById("question" + currentQuestion).style.display = "none";
   document.getElementById("jawaban" + currentQuestion).style.display = "none";
