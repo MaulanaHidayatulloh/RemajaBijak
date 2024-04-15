@@ -246,6 +246,10 @@ section {
   font-weight: 700;
 }
 
+.main-box a:hover {
+  background-color: var(--hover);
+}
+
 /* Lapak Ads */
 .lapak-ads {
   padding: 0;
@@ -353,6 +357,11 @@ section {
   margin-top: 1rem;
   font-size: 1.5rem;
   font-weight: 700;
+}
+
+.quiz-cover a:hover {
+  color: var(--primary);
+  background-color: var(--hover);
 }
 
 /* QUIZ */
@@ -639,4 +648,9 @@ section {
 
 .back #home-page i {
   font-weight: bold;
+}
+
+.jawab button:hover {
+  color: var(--primary);
+  background-color: var(--hover);
 }

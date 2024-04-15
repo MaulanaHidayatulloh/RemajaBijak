@@ -206,22 +206,39 @@ section {
   width: 30rem;
 }
 
+#kiri-1,
+#kiri-2,
+#kiri-3,
+#kiri-4,
+#kiri-5,
+#kiri-6,
+#kiri-7,
+#kiri-8 {
+  display: none;
+  align-items: center;
+}
+
 .mitos-box-1 img,
 .mitos-box-2 img {
   height: 48%;
 }
 
 .mitos-box-1 h2 {
+  display: flex;
+  height: 10rem;
   color: var(--secondary);
   background-color: var(--bg);
-  padding: 1.5rem;
+  padding: 0 1.5rem;
   font-weight: 700;
   margin: 0 2rem;
   border-radius: 1.5rem;
   text-align: left;
+  align-items: center;
 }
 
 .mitos-box-2 h2 {
+  display: flex;
+  height: 10rem;
   color: var(--primary);
   background-color: var(--bg);
   padding: 1.5rem;
@@ -229,6 +246,7 @@ section {
   margin: 0 2rem;
   border-radius: 1.5rem;
   text-align: left;
+  align-items: center;
 }
 
 .mitos-box-1 a {
@@ -241,6 +259,7 @@ section {
   border-radius: 2rem;
   font-weight: 800;
   color: var(--secondary);
+  gap: 0.3rem;
 }
 
 .mitos-box-2 a {
@@ -253,9 +272,24 @@ section {
   border-radius: 2rem;
   font-weight: 800;
   color: var(--bg);
+  gap: 0.3rem;
 }
 
-.mitos-ket-1 {
+.mitos-box-1 a:hover {
+  background-color: var(--hover);
+  color: var(--primary);
+}
+
+.mitos-box-2 a:hover {
+  background-color: var(--hover);
+  color: var(--primary);
+}
+
+.mitos-ket-1,
+.mitos-ket-3,
+.mitos-ket-4,
+.mitos-ket-6,
+.mitos-ket-8 {
   background-color: var(--footer);
   margin-bottom: 2.5rem;
   border-radius: 2rem;
@@ -267,9 +301,12 @@ section {
   padding-left: 4rem;
   padding-bottom: 1.5rem;
   text-align: justify;
+  display: none;
 }
 
-.mitos-ket-2 {
+.mitos-ket-2,
+.mitos-ket-5,
+.mitos-ket-7 {
   background-color: var(--primary);
   margin-bottom: 2.5rem;
   border-radius: 2rem;
@@ -281,6 +318,7 @@ section {
   padding-left: 4rem;
   padding-bottom: 1.5rem;
   text-align: justify;
+  display: none;
 }
 
 .mitos-title {
@@ -295,10 +333,15 @@ section {
   color: var(--primary);
 }
 
-.mitos-keterangan-1 {
+.mitos-keterangan-1,
+.mitos-keterangan-4 {
   overflow: auto;
   height: 22rem;
   margin-top: 1.5rem;
+}
+
+.mitos-keterangan-4 {
+  padding-right: 1.5rem;
 }
 
 .mitos-keterangan-2 {
@@ -308,7 +351,8 @@ section {
   padding-right: 1.5rem;
 }
 
-.mitos-keterangan-1 p {
+.mitos-keterangan-1 p,
+.mitos-keterangan-4 p {
   color: var(--secondary);
   font-size: 1rem;
   font-weight: 500;
@@ -330,50 +374,155 @@ section {
   font-weight: bold;
 }
 
+/* click mitos/fakta */
+#kanan-1.active,
+#kanan-2.active,
+#kanan-3.active,
+#kanan-4.active,
+#kanan-5.active,
+#kanan-6.active,
+#kanan-7.active,
+#kanan-8.active {
+  display: none;
+}
+
+#kiri-1.active,
+#kiri-2.active,
+#kiri-3.active,
+#kiri-4.active,
+#kiri-5.active,
+#kiri-6.active,
+#kiri-7.active,
+#kiri-8.active {
+  display: flex;
+}
+
+.mitos-ket-1.active,
+.mitos-ket-2.active,
+.mitos-ket-3.active,
+.mitos-ket-4.active,
+.mitos-ket-5.active,
+.mitos-ket-6.active,
+.mitos-ket-7.active,
+.mitos-ket-8.active {
+  display: block;
+}
+/* batas */
+
 /* scroll */
 
-/* main-cotent */
+/* main-cotent mitos atau fakta */
 /* width */
-.sharing-container::-webkit-scrollbar {
+.mitos-container::-webkit-scrollbar {
   height: 10px;
 }
 
 /* Track */
-.sharing-container::-webkit-scrollbar-track {
+.mitos-container::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey;
   border-radius: 10px;
 }
 
 /* Handle */
-.sharing-container::-webkit-scrollbar-thumb {
+.mitos-container::-webkit-scrollbar-thumb {
   background: #b6b3b3;
   border-radius: 10px;
 }
 
 /* Handle on hover */
-.sharing-container::-webkit-scrollbar-thumb:hover {
+.mitos-container::-webkit-scrollbar-thumb:hover {
   background: var(--secondary);
 }
 
 /* #mitos-keterangan */
 /* width */
-.mitos-keterangan-2::-webkit-scrollbar {
+.mitos-keterangan-2::-webkit-scrollbar,
+.mitos-keterangan-4::-webkit-scrollbar {
   width: 10px;
 }
 
 /* Track */
-.mitos-keterangan-2::-webkit-scrollbar-track {
+.mitos-keterangan-2::-webkit-scrollbar-track,
+.mitos-keterangan-4::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey;
   border-radius: 10px;
 }
 
 /* Handle */
-.mitos-keterangan-2::-webkit-scrollbar-thumb {
+.mitos-keterangan-2::-webkit-scrollbar-thumb,
+.mitos-keterangan-4::-webkit-scrollbar-thumb {
   background: #b6b3b3;
   border-radius: 10px;
 }
 
 /* Handle on hover */
-.mitos-keterangan-2::-webkit-scrollbar-thumb:hover {
+.mitos-keterangan-2::-webkit-scrollbar-thumb:hover,
+.mitos-keterangan-4::-webkit-scrollbar-thumb:hover {
   background: var(--secondary);
+}
+
+/* Lapak Ads */
+.lapak-ads {
+  padding: 0;
+  margin-top: 7rem;
+}
+
+.ads {
+  text-align: center;
+  color: var(--bg);
+  background-color: var(--primary);
+  align-items: center;
+  padding: 2rem 0;
+  font-size: 1.5rem;
+}
+
+/* Footer */
+.footer {
+  padding: 0;
+}
+
+.footer-container {
+  display: block;
+  background-color: var(--footer);
+}
+
+.footer-box {
+  padding-bottom: 1rem;
+  padding-top: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  display: flex;
+  border-bottom: 2px solid var(--primary);
+  align-items: center;
+  margin: 0 3rem;
+}
+
+.footer-box .logo {
+  cursor: default;
+  margin-right: auto;
+}
+
+.footer-box img {
+  width: 15rem;
+  height: 5rem;
+}
+
+.kontak-kami h2 {
+  font-size: 1.3rem;
+  color: var(--primary);
+  padding-left: 2rem;
+  padding-bottom: 0.7rem;
+}
+
+.kontak-kami img {
+  width: 3rem;
+  height: 3rem;
+}
+
+/* paling bawah */
+.copyright {
+  text-align: center;
+  color: var(--primary);
+  padding: 1.5rem 0;
+  font-weight: 500;
 }

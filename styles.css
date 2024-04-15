@@ -420,13 +420,31 @@ section {
 }
 
 .konsul a {
-  border-radius: 3rem;
-  background-color: #f2c1c1;
-  padding: 1.5rem 2rem;
-  font-size: 1.2rem;
+  display: flex;
+  width: 20rem;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  font-size: 1.3rem;
   margin: 0 3.5rem;
-  color: var(--primary);
-  font-weight: 600;
+  color: var(--bg);
+  font-weight: 400;
+  background-image: url(asset/Layanan-Design.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  font-family: "Bowlby One SC", sans-serif;
+  gap: 5rem;
+  text-align: center;
+}
+
+.konsul img {
+  height: 6rem;
+  margin: -1rem -1.5rem;
+}
+
+.konsul a:hover {
+  box-shadow: 0 0.1rem 2rem var(--shadow-color);
+  transform: scale(1.1);
+  opacity: 80%;
 }
 
 /* Lapak Ads */
@@ -477,13 +495,13 @@ section {
 .kontak-kami h2 {
   font-size: 1.3rem;
   color: var(--primary);
-  padding-left: 4rem;
+  padding-left: 2rem;
   padding-bottom: 0.7rem;
 }
 
-.kontak-kami a img {
-  width: 60px;
-  height: 40px;
+.kontak-kami img {
+  width: 3rem;
+  height: 3rem;
 }
 
 /* paling bawah */
