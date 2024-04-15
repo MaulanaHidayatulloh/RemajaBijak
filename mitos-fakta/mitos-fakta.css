@@ -1,0 +1,379 @@
+:root {
+  --primary: #cf4647;
+  --secondary: #1d2427;
+  --bg: #f8f6f6;
+  --shadow-color: rgba(0, 0, 0, 0.2);
+  --hover: #ffd568;
+  --light-red: #f2c1c1;
+  --footer: #ffdbdc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+  color: var(--secondary);
+}
+
+/* Navbar */
+.header {
+  display: flex;
+  align-items: center;
+  padding: 1.7rem 7%;
+  background-color: var(--primary);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header .navbar-logo {
+  margin-right: auto;
+}
+
+.header img {
+  width: 12rem;
+  height: 3rem;
+}
+
+.navbar a {
+  position: relative;
+  color: rgb(255, 255, 255);
+  margin-right: 3.5rem;
+  font-size: 1.1rem;
+  margin-right: 2rem;
+}
+
+#mitos {
+  color: var(--hover);
+}
+
+/* hover */
+.topik-hover {
+  display: none;
+  position: absolute;
+  width: 15rem;
+  left: 53.5%;
+  transform: translateX(-70%);
+  background-color: var(--bg);
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.topik-hover a {
+  display: block;
+  line-height: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  margin: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: gray;
+}
+
+.topik-hover a:hover {
+  background-color: #f2c1c1;
+  border-radius: 1rem;
+  color: var(--secondary);
+}
+
+.topik:hover + .topik-hover,
+.topik-hover:hover {
+  display: block;
+}
+
+.navbar .nav:hover,
+.topik:hover {
+  color: var(--hover);
+}
+/* batas */
+
+.navbar-extra a {
+  color: var(--primary);
+  padding: 0.5rem 2.5rem;
+  background-color: var(--bg);
+  border-radius: 5rem;
+  font-weight: 800;
+}
+
+.navbar-extra a:hover {
+  background-color: var(--hover);
+}
+
+section {
+  min-height: auto;
+  min-width: auto;
+  padding: 10rem 7% 2rem;
+}
+
+/* sampul atas*/
+.home {
+  position: relative;
+  align-items: center;
+  gap: 2rem;
+  display: flex;
+  justify-content: center;
+  background-image: url(../asset/Pattern-Main-Page.png);
+  background-position: 3.5rem 6.8rem;
+  background-size: 95%;
+  background-repeat: no-repeat;
+}
+
+.home .home-content {
+  max-width: auto;
+  line-height: 1.5;
+}
+
+.home-content h1 {
+  font-family: "Bowlby One SC", sans-serif;
+  font-weight: 500;
+}
+
+.home-content .title {
+  font-size: 3rem;
+}
+
+.home-content .home-span {
+  color: var(--primary);
+  font-size: 3.4rem;
+}
+
+.garis {
+  background-color: var(--primary);
+  border-radius: 10rem;
+  height: 1rem;
+  margin-top: -2.4rem;
+  margin-left: 7.5rem;
+  margin-right: 4rem;
+}
+
+/* mitos/fakta */
+.mitos {
+  padding-top: 6rem;
+}
+
+.mitos p {
+  color: var(--secondary);
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.mitos-container {
+  overflow: auto;
+  margin-top: 3rem;
+}
+
+.mitos-card {
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  display: inline-flex;
+}
+
+.mitos-box-1 {
+  z-index: 1;
+  background-color: var(--primary);
+  margin-bottom: 2.5rem;
+  border-radius: 2rem;
+  text-align: center;
+  height: 33rem;
+  width: 30rem;
+}
+
+.mitos-box-2 {
+  z-index: 1;
+  background-color: var(--footer);
+  margin-bottom: 2.5rem;
+  border-radius: 2rem;
+  text-align: center;
+  height: 33rem;
+  width: 30rem;
+}
+
+.mitos-box-1 img,
+.mitos-box-2 img {
+  height: 48%;
+}
+
+.mitos-box-1 h2 {
+  color: var(--secondary);
+  background-color: var(--bg);
+  padding: 1.5rem;
+  font-weight: 700;
+  margin: 0 2rem;
+  border-radius: 1.5rem;
+  text-align: left;
+}
+
+.mitos-box-2 h2 {
+  color: var(--primary);
+  background-color: var(--bg);
+  padding: 1.5rem;
+  font-weight: 700;
+  margin: 0 2rem;
+  border-radius: 1.5rem;
+  text-align: left;
+}
+
+.mitos-box-1 a {
+  display: flex;
+  justify-content: end;
+  padding: 0.8rem 1.5rem;
+  margin: 1rem;
+  margin-left: 21rem;
+  background-color: var(--bg);
+  border-radius: 2rem;
+  font-weight: 800;
+  color: var(--secondary);
+}
+
+.mitos-box-2 a {
+  display: flex;
+  justify-content: end;
+  padding: 0.8rem 1.5rem;
+  margin: 1rem;
+  margin-left: 21rem;
+  background-color: var(--primary);
+  border-radius: 2rem;
+  font-weight: 800;
+  color: var(--bg);
+}
+
+.mitos-ket-1 {
+  background-color: var(--footer);
+  margin-bottom: 2.5rem;
+  border-radius: 2rem;
+  width: 27rem;
+  height: 33rem;
+  margin-left: -6rem;
+  padding-top: 1.5rem;
+  padding-right: 1.5rem;
+  padding-left: 4rem;
+  padding-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.mitos-ket-2 {
+  background-color: var(--primary);
+  margin-bottom: 2.5rem;
+  border-radius: 2rem;
+  width: 27rem;
+  height: 33rem;
+  margin-left: -6rem;
+  padding-top: 1.5rem;
+  padding-right: 1.5rem;
+  padding-left: 4rem;
+  padding-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.mitos-title {
+  display: flex;
+  gap: 1rem;
+  border-bottom: 7px solid var(--primary);
+  padding-bottom: 1rem;
+}
+
+.mitos-title h1 {
+  font-size: 3rem;
+  color: var(--primary);
+}
+
+.mitos-keterangan-1 {
+  overflow: auto;
+  height: 22rem;
+  margin-top: 1.5rem;
+}
+
+.mitos-keterangan-2 {
+  overflow: auto;
+  height: 28rem;
+  margin-top: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.mitos-keterangan-1 p {
+  color: var(--secondary);
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: start;
+  text-align: justify;
+  overflow: auto;
+}
+
+.mitos-keterangan-2 p {
+  color: var(--bg);
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: start;
+  text-align: justify;
+  overflow: auto;
+}
+
+.mitos-keterangan-1 span {
+  font-weight: bold;
+}
+
+/* scroll */
+
+/* main-cotent */
+/* width */
+.sharing-container::-webkit-scrollbar {
+  height: 10px;
+}
+
+/* Track */
+.sharing-container::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+.sharing-container::-webkit-scrollbar-thumb {
+  background: #b6b3b3;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.sharing-container::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary);
+}
+
+/* #mitos-keterangan */
+/* width */
+.mitos-keterangan-2::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.mitos-keterangan-2::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+.mitos-keterangan-2::-webkit-scrollbar-thumb {
+  background: #b6b3b3;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.mitos-keterangan-2::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary);
+}
