@@ -151,4 +151,27 @@ document.addEventListener("DOMContentLoaded", function () {
     Pubertasketerangan5.classList.toggle("active");
     e.preventDefault();
   };
+
+    // #6
+  const Pubertasbawah6 = document.querySelector(".bawah-pubertas-6");
+  const Pubertaskanan6 = document.querySelector(".kanan-pubertas-6");
+  const Pubertasketerangan6 = document.querySelector(".keterangan-pubertas-6");
+
+  // ketika klik panah kanan
+  Pubertaskanan6.onclick = (e) => {
+    Pubertasbawah6.classList.toggle("active");
+    Pubertaskanan6.classList.toggle("active");
+    Pubertasketerangan6.classList.toggle("active");
+    e.preventDefault();
+  };
+
+  // ketika klik panah bawah
+  Pubertasbawah6.onclick = (e) => {
+    Pubertasbawah6.classList.toggle("active");
+    Pubertaskanan6.classList.toggle("active");
+    Pubertasketerangan6.classList.toggle("active");
+    e.preventDefault();
+  };
+
+
 });
