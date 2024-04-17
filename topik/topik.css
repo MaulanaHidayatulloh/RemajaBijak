@@ -622,7 +622,103 @@ section {
 }
 
 
+/* detail article */
+.detail-article h1{
+  color: var(--secondary);
+}
 
+.detail-article h4 {
+  color: var(--primary);
+}
+
+.detail-article p {
+  color: var(--secondary);
+}
+
+.detail-article .container-padding {
+  padding-bottom: 30px;
+}
+
+.detail-article .container-padding .row-detail {
+  display: flex;
+  width: 100%;
+}
+
+.detail-article .container-padding .row-detail .news-info{
+ color: var(--primary);
+}
+
+.detail-article .container-padding .row-detail .news-tgl{
+  color: gray;
+ }
+
+ .detail-box-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 1.2;
+  padding: 5rem 0;
+  margin-top: -2rem;
+  margin-left: -5rem;
+  margin-right: -5rem;
+  background-image: url(../asset/Pattern-pubertas-page.png);
+  background-position: top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.detail-news {
+  position: relative;
+  display: block;
+  height: 20rem;
+}
+
+/* About Us */
+
+.container-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: -20px;
+  font-family: "Bowbly";
+  font-weight: bold;
+}
+
+.container-about h1 {
+  font-size: 3rem;
+  color: var(--secondary);
+  padding-bottom: -20px;
+}
+
+.container-about p {
+  color: var(--secondary);
+  padding-left: 20rem;
+  padding-right: 20rem;
+}
+
+.big-image {
+  width: 800px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.small-image {
+  width: 500px; 
+  height: auto;
+  margin-top: 20px;
+}
+
+p {
+  margin-top: 20px;
+  color: #333;
+}
+
+.garis {
+  background-color: var(--primary);
+  border-radius: 10rem;
+}
 
 
 
