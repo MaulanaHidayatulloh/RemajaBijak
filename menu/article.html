@@ -44,10 +44,12 @@
           <a href="../topik/ims.html">Mengenal Jenis-Jenis IMS</a>
           <a href="../topik/pelecehan.html">Sekilas Tentang Pelecehan Sexual</a>
         </div>
-        <a href="mitosFakta.html" class="nav">Mitos atau Fakta</a>
+        <a href="../mitos-fakta/mitos-fakta.html" class="nav"
+          >Mitos atau Fakta</a
+        >
         <a href="article.html" class="nav" id="pubertas">Artikel</a>
-        <a href="#" class="nav">FAQ</a>
-        <a href="#" class="nav">Tentang Kami</a>
+        <a href="../FAQ/faq.html" class="nav">FAQ</a>
+        <a href="../tentang-kami/aboutUs.html" class="nav">Tentang Kami</a>
       </nav>
 
       <div class="navbar-extra">
@@ -58,24 +60,29 @@
     <!-- sampul atas -->
     <section class="pubertas">
       <div class="pubertas-box-1">
-        <h1 class="title">ARTIKEL APA YANG KAMU BACA HARI INI?</h1>
+        <h1 class="title" id="artikel-title">
+          ARTIKEL APA YANG KAMU BACA HARI INI?
+        </h1>
+      </div>
+      <div class="search-container">
+        <button>
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/622/622669.png"
+            alt="Search Icon"
+            width="20"
+          />
+        </button>
+        <input type="text" placeholder="Cari Topik Artikel" />
       </div>
     </section>
-    <div class="search-container">
-      <button>
-        <img
-          src="https://cdn-icons-png.flaticon.com/512/622/622669.png"
-          alt="Search Icon"
-          width="20"
-        />
-      </button>
-      <input type="text" placeholder="Search..." />
-    </div>
 
     <!-- main content -->
     <section class="Rekomendasi">
       <div class="rekomendasi-title">
-        <h2>Rekomendasi Untuk Kamu!</h2>
+        <h2>
+          Rekomendasi Untuk Kamu!
+          <img src="../asset/rekomendasi-artikel.png" alt="" />
+        </h2>
       </div>
       <div class="News" id="Top3-sex-news-container">
         <!-- Berita sex akan ditampilkan di sini -->
@@ -85,13 +92,20 @@
     <!-- <div class="News" id="all-sex-news-container">
       
     </div> -->
-    <section class="Rekomendasi">
+    <section class="Rekomendasi" id="artikel-lainnya">
       <div class="rekomendasi-title">
-        <h2>Rekomendasi Untuk Kamu!</h2>
+        <h2>
+          Lihat Artikel Lainnya!<img
+            src="../asset/rekomendasi-artikel.png"
+            alt=""
+          />
+        </h2>
       </div>
-      <div class="swiper-container" id="news-container">
-        <div class="swiper-wrapper">
-          <!-- Konten akan ditampilkan di sini -->
+      <div class="swiper-artikel">
+        <div class="swiper-container" id="news-container">
+          <div class="swiper-wrapper">
+            <!-- Konten akan ditampilkan di sini -->
+          </div>
         </div>
       </div>
     </section>

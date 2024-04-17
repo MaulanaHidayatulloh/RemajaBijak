@@ -546,19 +546,29 @@ section {
 }
 
 /* New Artikel */
+#artikel-lainnya {
+  padding-top: 0;
+}
+
+#artikel-title {
+  margin-top: 3rem;
+}
+
 .search-container {
   display: flex;
   align-items: center;
   border: 1px solid var(--primary);
-  border-radius: 20px;
-  padding: 10px;
+  border-radius: 3rem;
+  padding: 15px;
   width: 1000px;
-  height: 50px;
+  height: 70px;
   margin: 0 auto;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  gap: 1.5rem;
 }
 
 .search-container input[type="text"] {
+  font-size: 1.2rem;
   border: none;
   outline: none;
   flex: 1;
@@ -574,8 +584,20 @@ section {
   background-color: transparent;
 }
 
+.search-container img {
+  margin-left: 1rem;
+}
+
 .rekomendasi-title h2 {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
   color: var(--primary);
+}
+
+.rekomendasi-title img {
+  padding-left: 1.5rem;
+  height: 3rem;
 }
 
 .News {
@@ -584,7 +606,7 @@ section {
 
 .flex-container {
   display: flex;
-  margin-bottom: 50px; 
+  margin-bottom: 50px;
 }
 
 .text-container {
@@ -599,7 +621,7 @@ section {
 }
 
 .flex-container > *:not(:last-child) {
-  margin-right: 20px; 
+  margin-right: 20px;
 }
 
 .meta-container {
@@ -621,10 +643,43 @@ section {
   width: 40%;
 }
 
+.swiper-artikel {
+  overflow-x: auto;
+}
+
+/* scroll */
+/* width */
+.swiper-artikel::-webkit-scrollbar {
+  height: 10px;
+}
+
+/* Track */
+.swiper-artikel::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+.swiper-artikel::-webkit-scrollbar-thumb {
+  background: #b6b3b3;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.swiper-artikel::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary);
+}
+/* Batas */
 
 /* detail article */
-.detail-article h1{
+#artikel-01 {
+  padding-top: 3rem;
+}
+
+.detail-article h1 {
   color: var(--secondary);
+  font-size: 3.5rem;
+  line-height: 1.3;
 }
 
 .detail-article h4 {
@@ -640,19 +695,32 @@ section {
 }
 
 .detail-article .container-padding .row-detail {
+  margin-top: -40px;
+  padding-bottom: 2rem;
   display: flex;
   width: 100%;
+  font-size: 1.5rem;
 }
 
-.detail-article .container-padding .row-detail .news-info{
- color: var(--primary);
+.detail-article .container-padding .row-detail .news-info {
+  font-weight: 800;
+  color: var(--primary);
 }
 
-.detail-article .container-padding .row-detail .news-tgl{
+.detail-article .container-padding .row-detail .news-tgl {
   color: gray;
- }
+}
 
- .detail-box-1 {
+h4 {
+  font-size: 1.4rem;
+}
+
+.artikel-ket {
+  font-weight: 500;
+  text-align: justify;
+}
+
+.detail-box-1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -674,28 +742,31 @@ section {
 }
 
 /* About Us */
-
 .container-about {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: -20px;
-  font-family: "Bowbly";
-  font-weight: bold;
+  margin-top: -6rem;
+  margin-bottom: 9rem;
 }
 
 .container-about h1 {
-  font-size: 3rem;
+  font-family: "Bowlby One SC", sans-serif;
+  font-size: 5rem;
   color: var(--secondary);
-  padding-bottom: -20px;
+  padding-bottom: 2rem;
+  font-weight: 100;
 }
 
 .container-about p {
   color: var(--secondary);
   padding-left: 20rem;
   padding-right: 20rem;
+  margin-top: 20px;
+  color: #333;
+  font-weight: 600;
 }
 
 .big-image {
@@ -705,20 +776,23 @@ section {
 }
 
 .small-image {
-  width: 500px; 
+  width: 500px;
   height: auto;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
-p {
-  margin-top: 20px;
-  color: #333;
+.p-title {
+  font-size: 1.3rem;
+}
+
+.p-keterangan {
+  font-size: 1.1rem;
 }
 
 .garis {
   background-color: var(--primary);
   border-radius: 10rem;
+  width: 60%;
+  height: 1rem;
+  margin-top: -1.3rem;
 }
-
-
-
