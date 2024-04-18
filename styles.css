@@ -50,6 +50,15 @@ body {
   height: 3rem;
 }
 
+
+.menu-icon{
+  display: none;
+}
+
+.topik-list{
+  display: none;
+}
+
 .navbar a {
   position: relative;
   color: rgb(255, 255, 255);
@@ -587,3 +596,5 @@ section {
   margin-right: 37.5rem;
   margin-top: 3rem;
 }
+
+
